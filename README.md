@@ -62,5 +62,21 @@
       </a>
       <br />
     </td>
+    <td align="center">
+      <a href="https://github.com/banchan01">
+      <img src="https://github.com/banchan01.png" width="80" alt="banchan01"/>
+      <br />
+      <sub><b>banchan01</b></sub>
+      </a>
+      <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/tbvjgjfzm">
+      <img src="https://github.com/tbvjgjfzm.png" width="80" alt="tbvjgjfzm"/>
+      <br />
+      <sub><b>tbvjgjfzm</b></sub>
+      </a>
+      <br />
+    </td>
   </tr>
 </table>
