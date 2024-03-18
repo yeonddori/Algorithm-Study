@@ -28,7 +28,7 @@ jobs:
       - name: Extract commit authors
         id: extract_authors
         run: |
-          authors=$(git log --date=local --format='%aN' | sort -u | awk '{gsub(/ /, "-", $0); printf "%s ", $0}')
+          authors=$(git log --date=local --format='%aN' --grep=':memo:' | sort -u | awk '{gsub(/ /, "-", $0); printf "%s ", $0}')
           echo "AUTHORS=$authors" >> $GITHUB_OUTPUT
 
       - name: Update progress
