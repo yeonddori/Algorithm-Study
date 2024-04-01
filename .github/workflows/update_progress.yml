@@ -67,14 +67,10 @@ jobs:
             fi
           done
 
-          if ! git diff --quiet; then
-            cd progress
-            git add $(TZ=Asia/Seoul date +%Y)-$(TZ=Asia/Seoul date +%m).md
-            git commit -m ":robot: Update progress by $COMMITTER_NAME"
-            git push
-          else
-            echo "No changes."
-          fi
+          cd progress
+          git add $(TZ=Asia/Seoul date +%Y)-$(TZ=Asia/Seoul date +%m).md
+          git commit -m ":robot: Update progress by $COMMITTER_NAME"
+          git push
 
         env:
           COMMITTER_NAME: ${{ github.actor }}
