@@ -78,5 +78,13 @@
       </a>
       <br />
     </td>
+    <td align="center">
+      <a href="https://github.com/jujunoidea">
+      <img src="https://github.com/jujunoidea.png" width="80" alt="jujunoidea"/>
+      <br />
+      <sub><b>jujunoidea</b></sub>
+      </a>
+      <br />
+    </td>
   </tr>
 </table>
