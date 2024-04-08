@@ -52,7 +52,7 @@ jobs:
 
           for ((i=1; i<=$last_day; i++)); do
             echo -n "| $(date +%m)월 $i일 |" >> progress/$(date +%Y)-$(date +%m).md
-            if [[ "$i" -le "$(date +%d)" ]]; then
+            if [[ "$i" -le "10#$(date +%d)" ]]; then
               for author in ${AUTHORS[@]}; do
                 author=${author//-/ }
                 if git log --since "$(date -d "$(date +%Y-%m-$i) 00:00:00")" --until "$(date -d "$(date +%Y-%m-$i) 23:59:59")" --author="$author" | grep .; then
