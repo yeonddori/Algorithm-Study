@@ -9,16 +9,14 @@ jobs:
   update-progress:
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, ':memo:')
+    env:
+      TZ: 'Asia/Seoul'
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - name: Set timezone
-        run: |
-          export TZ="Asia/Seoul"
 
       - name: Set Git bot
         run: |
