@@ -1,19 +1,16 @@
-from collections import deque
-
-
 def bfs(x, y):
-    q = deque()
-    q.append((x, y))
+    queue = [(x, y)]
     visited[x][y] = True
-    while q:
-        x, y = q.popleft()
+    while (queue):
+        x, y = queue.pop(0)
         for i in range(4):
-            nx, ny = x + dx[i], y + dy[i]
+            nx = x + dx[i]
+            ny = y + dy[i]
             if nx < 0 or nx >= M or ny < 0 or ny >= N:
                 continue
             if field[nx][ny] == 1 and not visited[nx][ny]:
+                queue.append((nx, ny))
                 visited[nx][ny] = True
-                q.append((nx, ny))
 
 
 T = int(input())
