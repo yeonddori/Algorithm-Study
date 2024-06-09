@@ -41,18 +41,15 @@ int main()
             }
             else if(ch-'A'>=0 && ch-'Z'<=0)
             {
-                cursor = answer.insert(cursor,ch);
-                cursor++;
+                answer.insert(cursor,ch);
             }
             else if(ch-'a'>=0 && ch-'z'<=0)
             {
-                cursor = answer.insert(cursor,ch);
-                cursor++;
+                answer.insert(cursor,ch);
             }
             else if(ch>='0' && ch<='9')
             {
-                cursor = answer.insert(cursor,ch);
-                cursor++;
+                answer.insert(cursor,ch);
             }
             else
                 break;
@@ -66,3 +63,7 @@ int main()
     }
     return 0;
 }
+
+// insert는 실행 후, iterator가 자동으로 원래 자기자리를 가리킴
+// erase 는 실행 후, iterator가 어딜 가리킬지 모름... 따라서 꼭 return 값을 받아서 iterator를 update 해줘야함.
+// erase의 return 값 ==  지워진 요소 다음 요소의 iterator
