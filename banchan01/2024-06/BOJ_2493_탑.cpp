@@ -32,5 +32,4 @@ int main()
         }
         st.push(make_pair(h,i));
     }
-    return 0;
 }
