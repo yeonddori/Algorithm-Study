@@ -67,7 +67,7 @@ int main()
         }
         //Ãâ·Â
 
-        if(!dq.empty())
+        if(!err)
         {
             cout<< '[';
 
@@ -97,9 +97,6 @@ int main()
             }
             cout << ']';
         }
-        else
-            cout<<"[]";
-
         cout << '\n';
     }
     return 0;
