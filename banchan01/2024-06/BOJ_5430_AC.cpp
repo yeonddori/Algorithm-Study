@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <deque>
-#define LEN 100005
+
 using namespace std;
 
 int T;
@@ -37,6 +37,7 @@ int main()
             dq.push_back(stoi(temp));
         }
 
+        // 명령어 처리
         for(auto ch : cm)
         {
             if (ch == 'R')
@@ -65,8 +66,8 @@ int main()
                 }
             }
         }
-        //출력
 
+        //출력
         if(!err)
         {
             cout<< '[';
